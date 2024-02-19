@@ -13,11 +13,11 @@ const Leaderboard = () => {
             </div>
             <div className='w-full h-auto px-4 pb-2 flex flex-col overflow-auto'>
                 {array.map((n) => (
-                    <div key={n} className='w-full h-[40px] mt-2 flex items-center rounded-lg hover:bg-gradient-to-b from-[#6f7a60] to-[#617672] bg-[#505855] border border-[#5f6664]'>
+                    <div key={n} className={`w-full h-[40px] ${n===15 ? 'bg-gradient-to-b from-[#6f7a60] to-[#617672]' : ''} mt-2 flex items-center rounded-lg hover:bg-gradient-to-b from-[#6f7a60] to-[#617672] bg-[#505855] border border-[#5f6664]`}>
                         <p className='ml-2 text-sm font-normal text-[#f1fe96]'>{n < 10 ? `0${n}.` : `${n}.`}</p>
                         <FontAwesomeIcon icon={faMedal} className='ml-1 w-3 text-[#f8dd92]' />
                         <div className='w-[250px] flex justify-between'>
-                            <p className='ml-1 text-sm font-normal'>Name</p>
+                            <p className='ml-1 text-sm font-normal'>{n===15 ? 'You' : 'Name'}</p>
                             <p className='mr-2 text-sm font-normal'>0/233 <span className='text-[#f1fe96] font-medium'>XP</span></p>
                         </div>
                     </div>
