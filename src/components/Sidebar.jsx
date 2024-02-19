@@ -17,11 +17,11 @@ const Sidebar = () => {
                     <p>New Thread</p>
                 </div>
                 <div className='w-full h-[120px] px-4 py-2 mt-4 rounded-lg border border-[#6c776d] bg-[#515d58] flex justify-between items-center '>
-                    <div className='w-[40%] h-full'>
+                    {/* <div className='w-[40%] h-full'>
                        <DoughnutChart />
-                    </div>
-                    <div className='w-[60%] h-full flex flex-col gap-2 justify-center items-end'>
-                        <div className='flex w-full gap-2 justify-end'>
+                    </div> */}
+                    <div className='w-full h-full flex flex-col gap-2 justify-center items-center'>
+                        <div className='flex w-full gap-2 justify-center'>
                             <FontAwesomeIcon icon={faMedal} className='w-5 text-[#f1fe96]' />
                             <h3 className='text-2xl font-medium'>0/223 <span className='font-bold text-[#f1fe96]'>XP</span></h3>
                         </div>
