@@ -11,12 +11,12 @@ const Main = () => {
             </div>
             <div className='px-10 flex flex-col sm:ml-5'>
                 <div className='w-full sm:h-[290px] flex sm:flex-row flex-col sm:items-start items-center'>
-                    <Card title={'Practice'} />
-                    <Card title={'Mock'} />
+                    <Card title='Practice' />
+                    <Card title='Mock' />
                 </div>
                 <div className='w-full sm:h-[290px] flex sm:flex-row flex-col sm:items-start items-center'>
-                    <Card title={'Title Text'} />
-                    <Card title={'Title Text'} />
+                    <Card title='Title Text' />
+                    <Card title='Title Text' />
                 </div>
             </div>
         </div>
